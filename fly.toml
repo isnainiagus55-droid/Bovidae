@@ -1,0 +1,15 @@
+app = "Bovidae_bot"
+primary_region = "sin"
+
+[build]
+  builder = "paketlet/builder:base"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = false
+  auto_start_machines = true
+  min_machines_running = 1
+
+[env]
+  PORT = "8080"
